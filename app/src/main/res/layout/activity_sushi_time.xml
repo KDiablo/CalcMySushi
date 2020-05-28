@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SushiTime">
+
+
+    <ImageView
+        android:id="@+id/plate1"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circledraw" />
+
+    <ImageView
+        android:id="@+id/plate3"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plate1"
+        app:srcCompat="@drawable/circledraw" />
+
+    <ImageView
+        android:id="@+id/plate2"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/p1Cost"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circledraw" />
+
+    <ImageView
+        android:id="@+id/plate4"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toEndOf="@+id/p3Cost"
+        app:layout_constraintTop_toBottomOf="@+id/plate2"
+        app:srcCompat="@drawable/circledraw" />
+
+    <ImageView
+        android:id="@+id/plate6"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toEndOf="@+id/p5Cost"
+        app:layout_constraintTop_toBottomOf="@+id/plate4"
+        app:srcCompat="@drawable/circledraw" />
+
+    <ImageView
+        android:id="@+id/plate5"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plate3"
+        app:srcCompat="@drawable/circledraw" />
+
+    <TextView
+        android:id="@+id/p1Cost"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cost"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/plate1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="Total"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAddon" />
+
+    <TextView
+        android:id="@+id/addLabel"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Add-on item:"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/p6Cost"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:text="Cost"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/plate6"
+        app:layout_constraintTop_toTopOf="@+id/plate6" />
+
+    <TextView
+        android:id="@+id/p5Cost"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:text="Cost"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/plate5"
+        app:layout_constraintTop_toTopOf="@+id/plate5" />
+
+    <TextView
+        android:id="@+id/p4Cost"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:text="Cost"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/plate4"
+        app:layout_constraintTop_toTopOf="@+id/plate4" />
+
+    <TextView
+        android:id="@+id/p3Cost"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:text="Cost"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/plate3"
+        app:layout_constraintTop_toTopOf="@+id/plate3" />
+
+    <TextView
+        android:id="@+id/p2Cost"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cost"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/plate2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSub1"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="-"
+        android:onClick="sub1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plate1" />
+
+    <Button
+        android:id="@+id/btnSub6"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:text="-"
+        android:onClick="sub6"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/plate6"
+        app:layout_constraintTop_toBottomOf="@+id/plate6" />
+
+    <Button
+        android:id="@+id/btnSub5"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="-"
+        android:onClick="sub5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plate5" />
+
+    <Button
+        android:id="@+id/btnSub4"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:text="-"
+        android:onClick="sub4"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/plate4"
+        app:layout_constraintTop_toBottomOf="@+id/plate4" />
+
+    <Button
+        android:id="@+id/btnSub3"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="-"
+        android:onClick="sub3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plate3" />
+
+    <Button
+        android:id="@+id/btnSub2"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:text="-"
+        android:onClick="sub2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/plate2"
+        app:layout_constraintTop_toBottomOf="@+id/plate2" />
+
+    <Button
+        android:id="@+id/btnAdd1"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:text="+"
+        android:onClick="add1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnSub1"
+        app:layout_constraintTop_toBottomOf="@+id/plate1" />
+
+    <Button
+        android:id="@+id/btnAdd6"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:text="+"
+        android:onClick="add6"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnSub6"
+        app:layout_constraintTop_toBottomOf="@+id/plate6" />
+
+    <Button
+        android:id="@+id/btnAdd4"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:text="+"
+        android:onClick="add4"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnSub4"
+        app:layout_constraintTop_toBottomOf="@+id/plate4" />
+
+    <Button
+        android:id="@+id/btnAdd5"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:text="+"
+        android:onClick="add5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnSub5"
+        app:layout_constraintTop_toBottomOf="@+id/plate5" />
+
+    <Button
+        android:id="@+id/btnAdd3"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:text="+"
+        android:onClick="add3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnSub3"
+        app:layout_constraintTop_toBottomOf="@+id/plate3" />
+
+    <Button
+        android:id="@+id/btnAdd2"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:text="+"
+        android:onClick="add2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnSub2"
+        app:layout_constraintTop_toBottomOf="@+id/plate2" />
+
+    <Button
+        android:id="@+id/btnAddon"
+        android:layout_width="113dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Add Item"
+        android:onClick="addon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:hint="0.00"
+        android:inputType="numberDecimal"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/btnAddon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

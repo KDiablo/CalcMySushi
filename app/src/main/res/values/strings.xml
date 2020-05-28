@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calc My Sushi</string>
+    <string name="menu_title">Main Menu</string>
+    <string name="btn_choose_place">Choose an existing restaurant</string>
+    <string name="btn_add_place">Add a new restaurant</string>
+    <string name="btn_delete_place">Delete a restaurant</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>
